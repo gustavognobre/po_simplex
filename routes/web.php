@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AlgebricoController;
+
+use App\Http\Controllers\SimplexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +18,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
+});
+
+Route::post('/simplex',[SimplexController::class, 'simplex'])->name('simplex');
+Route::get('/tabela',[SimplexController::class, 'tabela'])->name('tabela');
+
+Route::get('/', function () {
+    return view('parte1');
+})->name('inicio');
+
+Route::get('/parte1', function () {
+    return view('parte1');
+})->name('parte1');
+
+Route::post('/parte2', [AlgebricoController::class, 'index'])->name('parte2');
+
+Route::post('/parte3', [AlgebricoController::class, 'calcular'])->name('parte3');
+
+Route::fallback(function () {
+
+    echo 'Anota acessada não existe. <a href= "' . route('parte1') . '">Clique aqui</a> para ir para a página inicial';
 });
