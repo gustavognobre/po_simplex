@@ -20,6 +20,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/metodo', function () {
+    return view('metodos');
+});
+
+
 Route::post('/simplex',[SimplexController::class, 'simplex'])->name('simplex');
 Route::get('/tabela',[SimplexController::class, 'tabela'])->name('tabela');
 
