@@ -21,12 +21,12 @@
                     <h5 align='center'></h5>
                     <br>
 
-                    <!--<div <i class="fa fa-align-center" aria-hidden="true"></i>>
+                    <div <i class="fa fa-align-center" aria-hidden="true"></i>
                     <button type="submit" class="btn btn-default col-auto">Algébrico</button>
                     <button type="submit" class="btn btn-default col-auto">Plotagem</button>
 
 
-</div>-->
+</div>
 
                 </form>
             </div>

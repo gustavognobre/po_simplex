@@ -52,8 +52,7 @@
 
                             <select name="tipo{{ $j }}" class="form-control">
                                 <option value="{{ 0 }}">=</option>
-                                <option selected value="{{ 1 }}">
-                                    <=< /option>
+                                <option selected value="{{ 1 }}"><= </option>
                                 <option value="{{ 2 }}">>=</option>
                             </select>
                             <div class="form-group">
