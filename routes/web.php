@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::get('/metodo', function () {
     return view('metodos');
-});
+})->name('metodos');
 
 
 Route::post('/simplex',[SimplexController::class, 'simplex'])->name('simplex');
@@ -35,6 +35,10 @@ Route::get('/', function () {
 Route::get('/parte1', function () {
     return view('parte1');
 })->name('parte1');
+
+Route::get('/parte1dual', function () {
+    return view('parte1dual');
+})->name('parte1dual');
 
 Route::post('/parte2', [AlgebricoController::class, 'index'])->name('parte2');
 

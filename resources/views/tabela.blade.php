@@ -72,7 +72,7 @@
                             {{ round($simplex['z'], 4) }}
                         @endif
                     </p>
-                    <a href="{{ route('inicio') }}" class="btn btn-default">Novo Problema</a>
+                    <a href="{{ route('metodos') }}" class="btn btn-default">Novo Problema</a>
                 @else
                     <p>Pivo = {{ $simplex[$linha_pivo][$var] }}</p>
                     <a href="{{ route('tabela') }}" class="btn btn-default">Continuar</a>
