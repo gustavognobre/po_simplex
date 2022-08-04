@@ -9,7 +9,7 @@
                 <input type="button" value="Algébrico">
             </a>
             <a href="/parte1dual">
-                <input type="button" value="Dual">
+                <input type="button" value="Plotagem">
             </a>
         </div>
 

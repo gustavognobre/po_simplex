@@ -12,6 +12,7 @@
         "vite": "^2.9.11"
     },
     "dependencies": {
+        "chart.js": "^3.9.1",
         "normalize.css": "^8.0.1"
     }
 }
